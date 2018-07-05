@@ -2,6 +2,10 @@
 {
     public static class ByteArrayExtensions
     {
+        /// <summary>
+        /// Byte array comparison optimized for 64 bit systems - compares bytes 8 at a time
+        /// Using a simple for loop may be faster for small arrays, or for non 64 bit environments
+        /// </summary>
         public static unsafe bool IsEquivalentTo(this byte[] data, byte[] compare)
         {
             if (data.Length != compare.Length)

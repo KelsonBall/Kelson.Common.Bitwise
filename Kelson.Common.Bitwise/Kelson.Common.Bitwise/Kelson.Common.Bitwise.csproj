@@ -3,6 +3,16 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <LangVersion>latest</LangVersion>
+    <Authors>Kelson Ball</Authors>
+    <Company>Kelson Software</Company>
+    <Description>Bitwise operations on byte, ushort, int, and ulong, as well as a fast byte[] comparison method for comparing large byte arrays on 64 bit systems</Description>
+    <PackageLicenseUrl>https://opensource.org/licenses/MIT</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/KelsonBall/Kelson.Common.Bitwise</PackageProjectUrl>
+    <PackageIconUrl>https://avatars2.githubusercontent.com/u/7193540?s=460&amp;v=4</PackageIconUrl>
+    <RepositoryUrl>https://github.com/KelsonBall/Kelson.Common.Bitwise</RepositoryUrl>
+    <PackageTags>bitwise</PackageTags>
+    <Version>0.1.0</Version>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
