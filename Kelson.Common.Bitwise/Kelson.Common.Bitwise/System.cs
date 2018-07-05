@@ -5,7 +5,7 @@
         public enum Endianess : byte
         {            
             Little      = 1,            
-            Big         = 4,            
+            Big         = 4,
         }
 
         static readonly uint SYSTEM_ORDER = 0x01020304;

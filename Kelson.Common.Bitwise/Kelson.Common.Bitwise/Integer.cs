@@ -46,7 +46,7 @@ namespace Kelson.Common.Bitwise
             => (byte)((data & 0xFF << (int)@byte) >> (int)@byte);
 
         public static int Pack(byte first, byte second, byte third, byte fourth)
-            => first << (int)Bytes.Fourth | second << (int)Bytes.Third | third << (int)Bytes.Second | fourth;
+            => first << (int)Bytes.First | second << (int)Bytes.Second | third << (int)Bytes.Third | fourth << (int)Bytes.Fourth;
         
         public static (byte, byte, byte, byte) Unpack(this int data)
             => (data.Byte(Bytes.First), data.Byte(Bytes.Second), data.Byte(Bytes.Third), data.Byte(Bytes.Fourth));
