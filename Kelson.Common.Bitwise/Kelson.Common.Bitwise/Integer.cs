@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Kelson.Common.Bitwise
+﻿namespace Kelson.Common.Bitwise
 {
     public static class Integer
     {
